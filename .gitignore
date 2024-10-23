@@ -1,0 +1,25 @@
+# Ignore virtual environment folder
+chudgetingENV
+
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+
+# Ignore .env file for environment variables
+.env
+
+# Ignore Django database (if using SQLite)
+*.sqlite3
+
+# Ignore VSCode specific settings
+.vscode/
+
+# Ignore Python egg cache
+*.egg-info/
+
+# Ignore logs
+*.log
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
