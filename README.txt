@@ -1,16 +1,27 @@
-venv for git bash terminal:
-    To create a new venv: python3.12 -m venv chudgetingENV
+# Chudgeting Web Application
 
-    To activate the venv: source chudgetingENV/Scripts/activate
-    To deactivate the venv (yes, this is it): deactivate
+## Overview
+This is a web application for managing monthly, recurring, and yearly expenses, built using **Django** for the backend and **React.js** for the frontend. It helps users track their budget, categorize expenses, and monitor spending patterns over time.
 
-Running and stop Django Server:
-    change directory to 'backend'
-    migrate changes: python manage.py migrate
-    
-    Run the server: python manage.py runserver
-    Stop the server: CTRL+C
+## Features
+- Track **monthly recurring expenses**, **running expenses**, and **yearly recurring expenses**.
+- Visualize spending habits through graphs and reports.
+- User authentication and personalized budgets.
+- Easy-to-use interface for adding, editing, and deleting expenses.
+- Export data in CSV format.
 
-Making and using requirements.txt
-    To create the file: pip freeze > requirements.txt
-    To use the file: pip install -r requirements.txt
+---
+
+## Tech Stack
+- **Backend**: Django (Python)
+- **Frontend**: React.js (JavaScript)
+- **Database**: SQLite
+- **Version Control**: Git and GitHub
+
+---
+
+## Prerequisites
+Make sure you have the following installed:
+- Python (version 3.12.6)
+- Node.js (for the React frontend)
+- Git
