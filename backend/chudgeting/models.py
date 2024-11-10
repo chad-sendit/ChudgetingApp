@@ -29,6 +29,7 @@ class RecurringIncome(models.Model):
 
     def __str__(self):
         return f"{self.income_source} - {self.description}: $ {self.amount}"
+
 class SingleIncome(models.Model):
     income_source = models.CharField(max_length=255)  # E.g. Venmo, Work
     description = models.CharField(max_length=255)  
@@ -37,6 +38,7 @@ class SingleIncome(models.Model):
 
     def __str__(self):
         return f"{self.income_source} - {self.description}: $ {self.amount}"
+
 class RunningExpense(models.Model):
     vendor_name = models.CharField(max_length=255)
     transaction_date = models.DateField()
@@ -46,6 +48,7 @@ class RunningExpense(models.Model):
 
     def __str__(self):
         return f"{self.transaction_date} - {self.category} - {self.amount}"
+
 class MonthlyRecurringExpense(models.Model):
     description = models.CharField(max_length=255)
     due_date = models.DateField()
@@ -53,6 +56,7 @@ class MonthlyRecurringExpense(models.Model):
 
     def __str__(self):
         return f"{self.description} - {self.amount}"
+
 
 class YearlyRecurringExpense(models.Model):
     description = models.CharField(max_length=255)
